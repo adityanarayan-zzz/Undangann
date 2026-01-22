@@ -1,0 +1,38 @@
+.wedding-page {
+  padding: 60px 20px;
+  background: white;
+  min-height: 100vh;
+}
+
+.back-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: #9CAF88;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  z-index: 5;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+/* MUNCUL SETELAH COVER TERBUKA */
+.app.opened .back-btn {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+section {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #c9b27c;
+}
